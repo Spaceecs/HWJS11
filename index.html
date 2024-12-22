@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Password generator</h2>
+    <div class="options">
+        <label for="length">Length of the password:</label>
+        <input type="number" id="length" min="1" max="10">
+    </div>
+    <div class="options">
+        <label>Characters to include:</label><br>
+        <input type="checkbox" id="includeDigits" checked> Digits (0-9)<br>
+        <input type="checkbox" id="includeUppercase" checked> Uppercase letters (A-Z)<br>
+        <input type="checkbox" id="includeLowercase" checked> Lowercase letters (a-z)<br>
+    </div>
+    <div class="options">
+        <button id="generate">Generate</button>
+        <div class="options">
+            <label for="output">Generated password</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
